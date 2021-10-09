@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Parallax Website for Electrical</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <style>body, html{
+        height:100%;
+        margin:0;
+        font-size:16px;
+        font-family:"Lato", sans-serif;
+        font-weight:400;
+        line-height:1.8em;
+        color:#666;
+      }
+      
+      .pimg1, .pimg2, .pimg3{
+        position:relative;
+        opacity:0.70;
+        background-position:center;
+        background-size:cover;
+        background-repeat:no-repeat;
+      
+        /*
+          fixed = parallax
+          scroll = normal
+        */
+        background-attachment:fixed;
+      }
+      
+      .pimg1{
+        background-image:url('img2.jpg');
+        min-height:100%;
+      }
+      
+      .pimg2{
+        background-image:url('img3.jpg');
+        min-height:400px;
+      }
+      
+      .pimg3{
+        background-image:url('img7.jpg');
+        min-height:400px;
+      }
+      
+      .section{
+        text-align:center;
+        padding:50px 80px;
+      }
+      
+      .section-light{
+        background-color:#f4f4f4;
+        color:#666;
+      }
+      
+      .section-dark{
+        background-color:#282e34;
+        color:#ddd;
+      }
+      
+      .ptext{
+        position:absolute;
+        top:50%;
+        width:100%;
+        text-align:center;
+        color:#000;
+        font-size:27px;
+        letter-spacing:8px;
+        text-transform:uppercase;
+      }
+      
+      .ptext .border{
+        background-color:#111;
+        color:rgb(7, 224, 0);
+        padding:20px;
+      }
+      
+      .ptext .border.trans{
+        background-color:transparent;
+      }
+      
+      @media(max-width:568px){
+        .pimg1, .pimg2, .pimg3{
+          background-attachment:scroll;
+        }
+      }
+      </style>
+  <div class="pimg1">
+    <div class="ptext">
+      <span class="border">
+       Electrical Engineering
+      </span>
+    </div>
+  </div>
+
+  <section class="section section-light">
+    <h2>About us</h2>
+    <p>
+        Electrical engineering is an engineering discipline concerned with the study, design and application of equipment, devices and systems which use electricity, electronics, and electromagnetism. It emerged as an identifiable occupation in the latter half of the 19th century after commercialization of the electric telegraph, the telephone, and electrical power generation, distribution and use.
+    </p>
+  </section>
+
+  <div class="pimg2">
+    <div class="ptext">
+      <span class="border trans">
+        We are Past, We are Present , We are Puture - We are Electrical Engineers
+      </span>
+    </div>
+  </div>
+
+  <section class="section section-dark">
+    <h2>Use of Electricity</h2>
+    <p>
+        Usage of electrical transmission lines to distribute the electric power over the long distances then come in the picture. This distributed electrical power is then used domestically and industrially for the generation of heat, light and to operate other electrical equipment either big or small in size or terms of consumption.
+    </p>
+  </section>
+
+  <div class="pimg3">
+    <div class="ptext">
+      <span class="border trans">
+       Everything depend on Electricity
+      </span>
+    </div>
+  </div>
+
+  <section class="section section-dark">
+    <h2>Scope </h2>
+    <p>
+        Electrical engineers design, develop, test and supervise the manufacturing of electrical equipment, such as electric motors, radar and navigation systems, communications systems and power generation equipment, states the U.S. Bureau of Labor Statistics. "Electronics engineers design and develop electronic equipment, such as broadcast and communications systems — from portable music players to global positioning systems (GPS).
+    </p>
+  </section>
+
+  <div class="pimg1">
+    <div class="ptext">
+      <span class="border">
+        Traversy Media
+      </span>
+    </div>
+  </div>
+</body>
+</html>
